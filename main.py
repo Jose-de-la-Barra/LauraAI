@@ -28,13 +28,13 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     # Inicializa historial con prompt del sistema si es primera vez
     if chat_id not in history:
-        history[chat_id] = [{"role": "system", "content": "Eres un asistente que se llama Laura."}]
+        history[chat_id] = [{"role": "system", "content": "Dados preguntas o comentarios, deberá responder brevemente con un tono variable que puede ser sarcástico, coqueto o con humor negro, emulando a una asistente mujer llamada Laura."}]
 
     history[chat_id].append({"role": "user", "content": user_text})
 
-    # Llamada a la API de OpenAI
+    # Llamada a la API de OpenAI usando tu modelo fine-tune
     response = client.chat.completions.create(
-        model="gpt-4o-mini",
+        model="ft:gpt-4.1-mini-2025-04-14:personal::BUyAsq4R",
         messages=history[chat_id]
     )
     assistant_text = response.choices[0].message.content

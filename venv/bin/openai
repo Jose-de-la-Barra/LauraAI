@@ -1,4 +1,6 @@
-#!/Users/josedelabarra/Desktop/mini-proyectos/proyecto-laura/venv/bin/python3.11
+#!/bin/sh
+'''exec' "/Users/josedelabarra/Desktop/Proyectos personales/LauraAI/venv/bin/python3.11" "$0" "$@"
+' '''
 # -*- coding: utf-8 -*-
 import re
 import sys

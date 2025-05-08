@@ -3,6 +3,10 @@
 credentials.json
 token.json
 
+
+# del fine tuning
+fine_tuning/
+
 # Python
 __pycache__/
 *.pyc
