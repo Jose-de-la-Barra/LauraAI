@@ -1,0 +1,14 @@
+# Archivos sensibles
+.env
+credentials.json
+token.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+
+# Sistema
+.DS_Store
